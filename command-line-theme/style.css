@@ -1,0 +1,30 @@
+body {
+   background-color: #222;  
+}
+
+#terminal { 
+  color: #fff;  
+  font-family: 'Courier New', Courier, monospace;  
+}  
+  
+.terminal-header {  
+  display: flex;  
+  align-items: center;  
+}  
+  
+.prompt {  
+  color: #0f0;  
+}  
+  
+.terminal-output {  
+  white-space: pre-wrap;  
+}  
+  
+#command-input {  
+  flex: 1;  
+  background-color: transparent;  
+  border: none;  
+  color: #fff;  
+  outline: none;  
+  font-family: 'Courier New', Courier, monospace;  
+}
