@@ -28,7 +28,7 @@ async function fetchArticlesFromWp() {
 // 显示文章列表  
 function displayArticleList() {  
   const list = articles.map((article) => `${article.id}. ${article.title.rendered}`).join('\n');  
-  outputElement.textContent = `欢迎使用命令行网页！\n输入 'list' 查看文章列表。\n输入文章ID查看特定文章内容。\n例如：输入 1 查看第一篇文章。\n\n${list}\n`;  
+  outputElement.textContent = `<span style="color:#0f0">欢迎使用命令行网页！</span>\n<span style="color:yellow">输入 'list' 查看文章列表。\n输入文章ID查看特定文章内容。\n例如：输入 1 查看第一篇文章。</span>\n\n${list}\n`;  
 }  
   
 // 显示文章内容  

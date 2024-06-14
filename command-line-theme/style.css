@@ -8,7 +8,6 @@ a {
 
 #terminal { 
   color: #fff;  
-  font-family: 'Courier New', Courier, monospace;  
 }  
   
 .terminal-header {  
@@ -30,5 +29,8 @@ a {
   border: none;  
   color: #fff;  
   outline: none;  
-  font-family: 'Courier New', Courier, monospace;  
+}
+
+code {
+  color: #28FF28
 }

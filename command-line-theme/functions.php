@@ -1,9 +1,9 @@
 <?php  
 /**  
  * Theme Name: CLI-Style Theme  
- * Theme URI: http://example.com/cli-style-theme/  
+ * Theme URI: https://github.com/gyzuike/wp-command-theme
  * Author: Your Name  
- * Author URI: http://example.com/  
+ * Author URI: http://www.shuyuzi.com/  
  * Description: A CLI-style WordPress theme  
  * Version: 1.0.0  
  * License: GNU General Public License v2 or later  
