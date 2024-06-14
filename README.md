@@ -28,6 +28,8 @@ function processCommand(command) {
       break;  
 ````
 
+字体改为思源黑体（本来加这个字体是尝试看能不能显示`biangbiang面`的biang字，结果没成功。不过字体本身挺好看的，就没改回去，而是以引用googleapi的方式加入了）
+![](https://pic53.photophoto.cn/20191220/0017029563619022_b.jpg)
 ----
 输入`list`列出文章列表，输入对应数字阅读文章内容
 可以支持图片
