@@ -1,5 +1,5 @@
 // WordPress REST API URL  
-const wpRestApiUrl = 'https://dev.shuyuzi.com/wp-json/wp/v2/posts';  
+const wpRestApiUrl = 'https://yourdomain/wp-json/wp/v2/posts';  
   
 // 初始文章列表（将从API获取后替换）  
 let articles = [];  
@@ -48,9 +48,15 @@ function displayArticleContent(articleId) {
 // 处理命令  
 function processCommand(command) {  
   switch (command) {  
-    case 'list':  
+    case 'list':  // 在这里修改命令，比如修改成'/l'等等  
       displayArticleList();  
       break;  
+
+//  添加新的相应事件
+//  case '/b':    //绑定命令，可以有符号
+//  window.open('https://www.gotodomain.com', '_blank'); // 这个是在新窗口或标签页中打开链接，也可以添加自己的
+//  break;  
+
     default:  
       const articleId = parseInt(command, 10);  
       if (!isNaN(articleId) && articles.some((a) => a.id === articleId)) {  

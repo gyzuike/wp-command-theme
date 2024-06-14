@@ -1,3 +1,34 @@
+## 2024.6.14 更新
+`js/cli.js`中添加绑定更多按键的例子，以帮助和我一样看到javascript的就头疼的朋友们。
+为方便阅读，在这里也添加说明下：
+
+找到以下内容
+````javascript
+// 处理命令  
+function processCommand(command) {  
+  switch (command) {  
+    case 'list':  // 在这里修改命令，比如修改成'/l'等等  
+      displayArticleList();  
+      break;  
+    default:  
+      const articleId = parseInt(command, 10);  
+      if (!isNaN(articleId) && articles.some((a) => a.id === articleId)) {  
+        displayArticleContent(articleId);  
+      } else {  
+        outputElement.textContent += `\n错误：无效的命令或文章ID\n`;  
+      }  
+  }  
+}  
+````
+在`break`和`default`之间添加
+````javascript
+      添加新的相应事件
+      case '/b':    //绑定命令，可以有符号
+      window.open('https://www.gotodomain.com', '_blank'); // 这个是在新窗口或标签页中打开链接，也可以添加自己的
+      break;  
+````
+
+----
 输入`list`列出文章列表，输入对应数字阅读文章内容
 可以支持图片
 
